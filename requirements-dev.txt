@@ -1,0 +1,11 @@
+typing_extensions==4.3.0
+flake8==5.0.4
+incremental==21.3.0
+ipython==8.4.0
+mypy==0.982
+mypy-extensions==0.4.3
+pytest==7.1.2
+python-dotenv==0.20.0
+tomli==2.0.1
+towncrier==21.9.0
+sphinx==6.0.0
