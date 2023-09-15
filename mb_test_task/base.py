@@ -14,7 +14,7 @@ class BaseFigure(ABC):
         ...
 
     @abstractmethod
-    def area(self) -> None:
+    def area(self) -> float:
         ...
 
 
@@ -50,7 +50,8 @@ class Triangle(BaseFigure):
     def __init__(self, shape: dict[str, float]) -> None:
         """
         Args:
-            shape dict[str, float]: shapes of circle. Must 3 side key, like `a`, `b`, `c`
+            shape dict[str, float]: shapes of circle.
+                                    Must 3 side key, like `a`, `b`, `c`
 
         Raises:
             ValueError: nonpositive side value
@@ -69,9 +70,9 @@ class Triangle(BaseFigure):
         Returns:
             float: area
         """
-        v = self.shape.values()
+        v: list[float] = list(self.shape.values())
         s = sum(v) / 2
-        return (s*(s-v[0])*(s-v[1])*(s-v[2])) ** 0.5
+        return (s*(s-v[0])*(s-v[1])*(s-v[2]))**0.5  # TODO: zip
 
     def is_right(self) -> bool:
         """Is triangle right side
@@ -83,4 +84,3 @@ class Triangle(BaseFigure):
         m = Decimal(max(v)) ** 2
         o = sum([Decimal(i) ** 2 for i in v if i != m])
         return True if m == o else False
-
