@@ -49,7 +49,12 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">mb_test_task</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">mb_test_task package</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#module-mb_test_task">Module contents</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-mb_test_task.base">base</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#mb_test_task.base.BaseFigure"><code class="docutils literal notranslate"><span class="pre">BaseFigure</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mb_test_task.base.Circle"><code class="docutils literal notranslate"><span class="pre">Circle</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mb_test_task.base.Triangle"><code class="docutils literal notranslate"><span class="pre">Triangle</span></code></a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -83,8 +88,77 @@
              
   <section id="mb-test-task-package">
 <h1>mb_test_task package<a class="headerlink" href="#mb-test-task-package" title="Permalink to this heading"></a></h1>
-<section id="module-mb_test_task">
-<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-mb_test_task" title="Permalink to this heading"></a></h2>
+<section id="module-mb_test_task.base">
+<span id="base"></span><h2>base<a class="headerlink" href="#module-mb_test_task.base" title="Permalink to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="mb_test_task.base.BaseFigure">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">BaseFigure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">shape</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mb_test_task/base.html#BaseFigure"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mb_test_task.base.BaseFigure" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ABC</span></code></p>
+<p>Abc class for figures</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="mb_test_task.base.BaseFigure.area">
+<em class="property"><span class="pre">abstract</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">area</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="reference internal" href="_modules/mb_test_task/base.html#BaseFigure.area"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mb_test_task.base.BaseFigure.area" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="mb_test_task.base.Circle">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Circle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">shape</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mb_test_task/base.html#Circle"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mb_test_task.base.Circle" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#mb_test_task.base.BaseFigure" title="mb_test_task.base.BaseFigure"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseFigure</span></code></a></p>
+<p>Circle figure</p>
+<p>In the shape arg, which should be a dictionary, add the
+key “radius” and a positive float value.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="mb_test_task.base.Circle.area">
+<span class="sig-name descname"><span class="pre">area</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="reference internal" href="_modules/mb_test_task/base.html#Circle.area"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mb_test_task.base.Circle.area" title="Permalink to this definition"></a></dt>
+<dd><p>Area o circle</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>area</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="mb_test_task.base.Triangle">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Triangle</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">shape</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/mb_test_task/base.html#Triangle"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mb_test_task.base.Triangle" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#mb_test_task.base.BaseFigure" title="mb_test_task.base.BaseFigure"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseFigure</span></code></a></p>
+<p>Triangle figure</p>
+<p>In the shape arg, which should be a dictionary, add the
+keys with names of sides of triangle and a positive float values.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="mb_test_task.base.Triangle.area">
+<span class="sig-name descname"><span class="pre">area</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">float</span></span></span><a class="reference internal" href="_modules/mb_test_task/base.html#Triangle.area"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mb_test_task.base.Triangle.area" title="Permalink to this definition"></a></dt>
+<dd><p>Area of triangle</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>area</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="mb_test_task.base.Triangle.is_right">
+<span class="sig-name descname"><span class="pre">is_right</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="reference internal" href="_modules/mb_test_task/base.html#Triangle.is_right"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#mb_test_task.base.Triangle.is_right" title="Permalink to this definition"></a></dt>
+<dd><p>Is triangle right side</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
 </section>
 </section>
 

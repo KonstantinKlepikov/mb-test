@@ -1,7 +1,5 @@
 # mb-test
 
-## Usage
-
 ## Documentation
 
 - [docs](https://konstantinklepikov.github.io/mb-test/)
