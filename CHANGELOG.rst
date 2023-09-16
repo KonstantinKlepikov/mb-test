@@ -3,6 +3,17 @@ mbtask changelog
 ================
 
 .. release notes
+Release v0.0.3 (2023-09-16)
+===========================
+
+Bugfixes
+--------
+
+- #2:
+      - fix github release permission
+      - -> (https://github.com/KonstantinKlepikov/mb-test/issues/2)
+
+
 Release v0.0.2 (2023-09-16)
 ===========================
 

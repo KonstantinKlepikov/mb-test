@@ -13,6 +13,9 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write
+
     steps:
 
       # https://github.com/actions/checkout
@@ -38,3 +41,4 @@ jobs:
             [CHANGELOG](https://github.com/${{ github.repository }}/blob/main/CHANGELOG.rst)
           draft: false
           prerelease: false
+
