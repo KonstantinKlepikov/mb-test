@@ -7,5 +7,6 @@ Provides mbtask version information.
 
 from incremental import Version
 
+
 __version__ = Version("mbtask", 0, 0, 4)
 __all__ = ["__version__"]

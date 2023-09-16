@@ -3,6 +3,7 @@ mbtask changelog
 ================
 
 .. release notes
+
 Release v0.0.4 (2023-09-17)
 ===========================
 
@@ -30,7 +31,6 @@ Bugfixes
       - fix incremental source
       - fix incremental version -> 22.10.0
       - -> (https://github.com/KonstantinKlepikov/mb-test/issues/2)
-
 
 Release v0.0.0 (2023-09-16)
 ===========================
