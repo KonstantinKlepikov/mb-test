@@ -27,7 +27,7 @@ def get_dependencies(*req: str) -> list[str]:
     ))
 
 here = pathlib.Path(__file__).parent.resolve()
-NAME = 'mb_test_task'
+NAME = 'mbtask'
 AUTHOR = 'Konstantin Klepikov'
 EMAIL = 'oformleno@gmail.com'
 DESCRIPTION = 'Mindbox test task'

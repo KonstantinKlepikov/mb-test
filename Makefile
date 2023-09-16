@@ -6,7 +6,7 @@ test-pypi:
 
 proj-doc:
 	# python setup.py build_sphinx
-	sphinx-apidoc -o docs/source mb_test_task
+	sphinx-apidoc -o docs/source mbtask
 	$(MAKE) -C ./docs html
 
 draft:
@@ -15,9 +15,9 @@ draft:
 
 release:
 	@read -p "Enter final version as X.Y.Z:" bump; \
-	python -m incremental.update mb-test-task --newversion=$$bump; \
+	python -m incremental.update mbtask --newversion=$$bump; \
 	towncrier build --yes; \
-	sphinx-apidoc -o docs/source mb_test_task; \
+	sphinx-apidoc -o docs/source mbtask; \
 	$(MAKE) -C ./docs html; \
 	git add .; \
 	git status; \
@@ -31,9 +31,9 @@ test:
 
 check:
 	echo "---> Check main package by flake8"; \
-	flake8 mb_test_task; \
+	flake8 mbtask; \
 	echo "---> Check types annotation in main package"; \
-	mypy mb_test_task; \
+	mypy mbtask; \
 	echo "---> Check tests folder by flake8"; \
 	flake8 tests
 

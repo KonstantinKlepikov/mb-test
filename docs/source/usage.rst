@@ -4,11 +4,11 @@ Usage
 Installation
 ------------
 
-To use ``mb_test_task``, first install it using pip:
+To use ``mbtask``, first install it using pip:
 
 .. code-block:: console
 
-   pip install mb_test_task
+   pip install mbtask
 
 Dev installation
 ----------------
@@ -19,7 +19,7 @@ Create virtual environment for project and activate it:
 
    virualenv -p python venv
 
-   pip install mb_test_task[dev]
+   pip install mbtask[dev]
 
 Or install from local source:
 
