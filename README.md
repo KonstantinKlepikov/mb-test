@@ -1,9 +1,9 @@
-# mb-test
+# mbtask
 
 ## Documentation
 
 - [docs](https://konstantinklepikov.github.io/mb-test/)
-- [pypi](https://pypi.org/project/mb_test_task/)
+- [pypi](https://pypi.org/project/mbtask/)
 
 ## Development
 
