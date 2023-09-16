@@ -15,7 +15,7 @@ draft:
 
 release:
 	@read -p "Enter final version as X.Y.Z:" bump; \
-	python -m incremental.update mb_test_task --newversion=$$bump; \
+	python -m incremental.update mb-test-task --newversion=$$bump; \
 	towncrier build --yes; \
 	sphinx-apidoc -o docs/source mb_test_task; \
 	$(MAKE) -C ./docs html; \
