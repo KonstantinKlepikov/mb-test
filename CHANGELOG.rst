@@ -1,11 +1,41 @@
+======================
+mb_test_task changelog
+======================
+
+.. release notes
+Release v0.0.0 (2023-09-16)
+===========================
+
+Features
+--------
+
+- #2:
+      - Added class structures of library
+      - removed mypy-pydantic ofptions in setup.py
+      - added tests
+      - added dev dependencies to requirements-dev.txt
+      - added docs
+      - fix workflow placement
+      - -> (https://github.com/KonstantinKlepikov/mb-test/issues/2)
+
+
+Release v0.0.0 (2023-09-16)
+===========================
+
+Features
+--------
+
+- #2:
+      - Added class structures of library
+      - removed mypy-pydantic ofptions in setup.py
+      - added tests
+      - added dev dependencies to requirements-dev.txt
+      - added docs
+      - fix workflow placement
+      - -> (https://github.com/KonstantinKlepikov/mb-test/issues/2)
+
+
 Release v0.0.0 (2023-09-14)
 ===========================
 
 No significant changes.
-
-
-=================
-mb_test_task changelog
-=================
-
-

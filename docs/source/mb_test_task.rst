@@ -1,10 +1,10 @@
 mb_test_task package
 ====================
 
-Module contents
----------------
+base
+----
 
-.. automodule:: mb_test_task
+.. automodule:: mb_test_task.base
    :members:
    :undoc-members:
    :show-inheritance:
