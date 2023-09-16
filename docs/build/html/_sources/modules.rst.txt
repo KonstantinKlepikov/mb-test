@@ -1,7 +1,7 @@
-mb_test_task
-============
+mbtask
+======
 
 .. toctree::
    :maxdepth: 4
 
-   mb_test_task
+   mbtask

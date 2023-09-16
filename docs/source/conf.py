@@ -4,11 +4,11 @@ import sys, os, datetime
 
 # Insert Requests' path into the system.
 sys.path.insert(0, os.path.abspath("..."))
-sys.path.insert(0, os.path.abspath('.../mb_test_task'))
+sys.path.insert(0, os.path.abspath('.../mbtask'))
 
 # Project metadata
 from importlib.metadata import metadata
-meta = metadata('mb_test_task')
+meta = metadata('mbtask')
 
 project = meta['Name']
 author = meta['Author']

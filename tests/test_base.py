@@ -1,6 +1,6 @@
 import pytest
 from decimal import Decimal
-from mb_test_task.base import Circle, Triangle
+from mbtask.base import Circle, Triangle
 
 
 class TestCircle:
