@@ -6,6 +6,17 @@ mb_test_task changelog
 Release v0.0.0 (2023-09-16)
 ===========================
 
+Bugfixes
+--------
+
+- #2:
+      - fix release python version -> 3.9
+      - -> (https://github.com/KonstantinKlepikov/mb-test/issues/2)
+
+
+Release v0.0.0 (2023-09-16)
+===========================
+
 Features
 --------
 
